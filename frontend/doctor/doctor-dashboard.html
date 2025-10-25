@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard - Smart Clinic</title>
+    <link rel="stylesheet" href="doctor.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <div>
+                <h1>Doctor Dashboard</h1>
+                <p id="doctorName"></p>
+            </div>
+            <button onclick="logout()" class="btn-logout">Logout</button>
+        </header>
+        
+        <div class="main-content">
+            <h2>My Appointments</h2>
+            <div id="appointmentsList">
+                <p>Loading appointments...</p>
+            </div>
+        </div>
+    </div>
+    <script src="doctor.js"></script>
+</body>
+</html>

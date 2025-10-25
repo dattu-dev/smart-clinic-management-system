@@ -1,0 +1,21 @@
+# Java and Spring Boot
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Blueprints
+*.jar
+*.war
+
+# Maven target directory
+/target/
+
+# IntelliJ IDEA
+/.idea/
+*.iml
+
+# macOS
+.DS_Store

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Smart Clinic</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Admin Dashboard</h1>
+            <button onclick="logout()" class="btn-logout">Logout</button>
+        </header>
+        
+        <div class="main-content">
+            <h2>Add New Doctor</h2>
+            <form id="addDoctorForm">
+                <div class="form-group">
+                    <label for="name">Doctor Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Dr. John Doe">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="doctor@clinic.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+1234567890">
+                </div>
+                
+                <div class="form-group">
+                    <label for="speciality">Speciality</label>
+                    <select id="speciality" name="speciality" required>
+                        <option value="">Select Speciality</option>
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Dermatology">Dermatology</option>
+                        <option value="Pediatrics">Pediatrics</option>
+                        <option value="Orthopedics">Orthopedics</option>
+                        <option value="General Medicine">General Medicine</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Set password">
+                </div>
+                
+                <div class="form-group">
+                    <label for="availableTimes">Available Times</label>
+                    <input type="text" id="availableTimes" name="availableTimes" required 
+                           placeholder="9:00 AM - 5:00 PM, Mon-Fri">
+                </div>
+                
+                <button type="submit" class="btn-submit">Add Doctor</button>
+            </form>
+            
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
